@@ -17,7 +17,7 @@
 
 /* nav bar style  */
 
-/* .navbar{
+.navbar{
     max-width: 1160px;
     display: flex;
     gap: 186px;
@@ -59,7 +59,7 @@
     text-decoration: none;
     font-weight: 300;
     font-size: 1.25rem;
-} */
+}
 
 .home{
     color: rgb(254, 163, 1);
@@ -70,16 +70,16 @@
 .admission{
     color: rgb(93, 88, 239);
 }
-/* .navbar .facilities{
+.navbar .facilities{
     color: rgb(5, 212, 223);
+}
+.bar{
+    display: none;
 }
 
 
-.navbar .fa-bars{
-    display: none;
-} */
 
-/* .navbar .btn{
+.navbar .btn{
     background-color: rgb(254, 163, 1);
     color: rgb(255, 255, 255);
     width: 197px;
@@ -91,7 +91,7 @@
     font-size: 1.25rem;
     cursor: pointer;
 
-} */
+}
 
 /* Banner section style  */
 
@@ -433,6 +433,25 @@ footer{
 /* Small Devices Media Query */
 
 @media screen and (max-width:576px) {
+
+    .navbar ul , .btn , .nav-title{
+        display: none;
+    }
+
+    
+    .bar{
+        display: block;
+    }
+    .navbar{
+        padding-bottom: 10px ;
+        display: flex;
+        gap: 260px;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+    }
     
  
 
@@ -519,7 +538,7 @@ footer{
         justify-content: baseline;
         align-items: baseline;
     }
-
+    
     
     
 }
