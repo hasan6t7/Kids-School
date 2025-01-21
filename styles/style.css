@@ -15,6 +15,12 @@
 
 
 
+.mark{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(254, 163, 1);
+}
+
 /* nav bar style  */
 
 .navbar{
@@ -38,7 +44,7 @@
     
 }
 .navbar .nav-title{
-    font-weight: 300;
+    font-weight: 700;
     font-size: 2rem;
     margin: 0px;
     color: rgb(17, 17, 17);
@@ -57,7 +63,7 @@
 
 .navbar ul li a{
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.25rem;
 }
 
@@ -87,7 +93,7 @@
     border: none;
     border-radius: 12px;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.25rem;
     cursor: pointer;
 
@@ -227,6 +233,11 @@
     border: none;
     cursor: pointer;
 }
+.ang-btn:hover{
+    background-color: rgb(1, 172, 253);
+    
+
+}
 /* Our stories Section Start  */
 
 #our-story{
@@ -261,18 +272,21 @@
 
     
 }
+
 .story-1-btn{
     width: 174px;
-    height: 47px;
-    border-radius: 47px;
-    border: none;
-    cursor: pointer;
+    height: 37px;
+    border-radius: 30px;
+    padding-top: 20px;
+    text-align: center;
     background-color: rgb(60, 216, 232);
     color: white;
     font-size: 1rem;
     font-weight: 500;
     margin-left: 38px;
     margin-bottom: 36px;
+    margin-top: -30px;
+    position: absolute;
     
 
 }
@@ -280,7 +294,9 @@
     margin-left: 38px;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 51px;
+    margin-bottom: 35px;
+    padding-top: 50px;
+    
 }
 
 .story-card-1-description{
@@ -314,8 +330,11 @@
     font-size: 1rem;
     font-weight: 500;
     border: none;
-    cursor: pointer;
     margin-left: 37px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: -30px;
+    position: absolute;
 }
 
 .box-description{
@@ -323,6 +342,7 @@
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 33px;
+    padding-top: 30px;
 }
 
 .story-div{
@@ -433,6 +453,13 @@ footer{
 
 }
 
+
+/* shared style  */
+.bg{
+    background-color:  rgb(93, 88, 240);
+}
+
+
 /* Small Devices Media Query */
 
 @media screen and (max-width:576px) {
@@ -514,7 +541,7 @@ footer{
     
     
     .box-description{
-        margin-left: 0px;
+        margin-left: 10px;
         font-size: 0.85rem;
         font-weight: 300;
         margin-bottom: 33px;
@@ -524,9 +551,10 @@ footer{
         width: 100px;
         height: 30px;
         border-radius: 27px;
-        margin-left: 0px;
+        margin-left: 10px;
         font-weight: 300;
         font-size: 0.75rem;
+        margin-top: -20px;
     }
     .card-2-box img{
         max-width: 100%;
