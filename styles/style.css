@@ -64,7 +64,7 @@
 .home{
     color: rgb(254, 163, 1);
 }
-.about{
+.abouts{
     color: rgb(1, 172, 253) ;
 }
 .admission{
@@ -131,6 +131,11 @@
 }
 
 /* Standart Curriculam section style  */
+#sc{
+    max-width: 1460px;
+    margin: 0 auto;
+    background: url(../assets/bg.png);
+}
 .sc-title{
     font-size: 2.875rem;
     font-weight: 700;
@@ -344,7 +349,86 @@
 }
 /* Our stories Section End  */
 
+/* Footer Start  */
+footer{
+    max-width: 1460px;
+    margin: 0 auto;
+    background-color: rgb(1, 172, 253);
+}
+.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    align-items: top;
+    
+    padding-top: 123px;
+    padding-bottom: 173px;
+}
 
+.title-image{
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.title-image img{
+    width: 80px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+}
+.footer-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: rgb(255, 225, 255);
+    margin: 0px;
+}
+.footer-description{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.about{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+
+.about  a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 20px;
+}
+.keep-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 32px;
+}
+.keep .icon img{
+    margin-right: 20px;
+
+}
 
 /* Small Devices Media Query */
 
@@ -409,7 +493,7 @@
     
     .box-description{
         margin-left: 0px;
-        font-size: 1rem;
+        font-size: 0.85rem;
         font-weight: 300;
         margin-bottom: 33px;
         text-align: left;
@@ -424,6 +508,16 @@
     }
     .card-2-box img{
         max-width: 100%;
+    }
+    .footer-container{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .title-image , .keep-title , .icon , .footer-description , .about-title , .anchor a{
+        margin-left: 20px;
+    }
+    .about{
+        justify-content: baseline;
+        align-items: baseline;
     }
 
     
